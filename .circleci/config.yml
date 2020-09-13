@@ -25,6 +25,7 @@ jobs:
       - restore_cache:
           keys: 
             - "npm-packages"
+      - run: npm i
       - run: npm run test
   analyze:
     docker:
